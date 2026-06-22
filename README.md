@@ -21,4 +21,4 @@ Hopefully, this project interests you! I would love to hear any advice or recomm
 
 ![MechanicalArmDemoPhoto](MechanicalArmDemoPhoto.png)
 
-*Above is a simple photo of an old iteration (since improved) of my mechanical arm, which was 3D CADed in Autodesk Inventor.*
+*Above is a simple photo of an old iteration (since improved) of my mechanical arm, which was created in Autodesk Inventor.*
