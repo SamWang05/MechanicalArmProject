@@ -32,7 +32,7 @@ Hopefully, this project interests you! I would love to hear any advice or recomm
 
 ### Description of Features
 
-Below is a list of features of this mechanical arm. Please note that items marked with a (*) are in progress or planned. Furthermore, features listed are non-exhaustive, and I will regularly update the list as new ideas are evaluated!
+Below is a list of features of this mechanical arm. Please note that items marked with a **(*)** are in progress or planned. Furthermore, features listed are non-exhaustive, and I will regularly update the list as new ideas are evaluated!
 
 ##### Mechanical
 * Six joints providing 360° mobility across three planes.
