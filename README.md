@@ -37,6 +37,7 @@ Below is a list of features of this mechanical arm. Please note that items marke
 ##### Mechanical
 * Six joints providing 360° mobility across three planes.
 * Modular attachment system to allow for manually changing end-attachment of the robotic arm.
+* Dedicated housing for electrical infrastructure.
 
 ##### Electrical
 * Electrical infrastructure powered by 3S LiPo battery (11.1V) with custom PCBs for power management, battery monitoring, display, etc.
