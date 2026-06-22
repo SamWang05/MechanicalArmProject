@@ -17,4 +17,8 @@ Some of the skills I hope to develop / continue developing on the software side 
 
 Hopefully, this project interests you! I would love to hear any advice or recommendations from knowledgeable individuals, and I hope to gain a lot of knowledge from this journey.
 
+
+
 ![MechanicalArmDemoPhoto](MechanicalArmDemoPhoto.png)
+
+*Above is a simple photo of an old iteration (since improved) of my mechanical arm, which was 3D CADed in Autodesk Inventor.*
