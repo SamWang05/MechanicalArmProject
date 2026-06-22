@@ -16,3 +16,5 @@ Some of the skills I hope to develop / continue developing on the software side 
 * Recognizing how different engineering fields interact in an ecosystem and how to design around the "Big Picture"
 
 Hopefully, this project interests you! I would love to hear any advice or recommendations from knowledgeable individuals, and I hope to gain a lot of knowledge from this journey.
+
+![MechanicalArmDemoPhoto](MechanicalArmDemoPhoto.png)
