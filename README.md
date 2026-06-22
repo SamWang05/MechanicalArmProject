@@ -19,17 +19,17 @@ Some of the skills I hope to develop / continue developing on the software side 
 * Recognizing how different engineering fields interact in an ecosystem and how to design around the "Big Picture"
 
 Hopefully, this project interests you! I would love to hear any advice or recommendations from knowledgeable individuals, and I hope to gain a lot of knowledge from this journey.  
-  
-  
-  
+<br>
+<br>
+<br>
 ![MechanicalArmDemoPhoto](MechanicalArmDemoPhoto.png)
 
 *Above is a simple photo of an old iteration (since improved) of my mechanical arm, which was created in Autodesk Inventor.*  
   
-  
-  
-  
-  
+<br>
+<br>
+<br>
+
 ### Description of Features
 
 Below is a list of features of this mechanical arm. Please note that items marked with a (*) are in progress or planned. Furthermore, features listed are non-exhaustive, and I will regularly update the list as new ideas are evaluated!
