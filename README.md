@@ -7,7 +7,7 @@ My name is Sam, and this is the Github Repository for my Mechanical Arm project.
 
 My goal is primarily to familiarize myself with embedded systems, as I aspire to become a capable embedded systems engineer. However, I will also be working with other aspects of the design process, since this is an individual project and I will be managing every aspect of this design with a strong emphasis on creating components from scratch wherever possible.
 
-Some of the skills I hope to develop / continue developing include:
+Some of the skills I hope to develop / continue developing on the software side include:
 
 * Proficiency with Git / other version control software
 * Understanding the software design process and principles of structured programming / data structures
