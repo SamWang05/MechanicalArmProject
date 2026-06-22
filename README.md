@@ -3,7 +3,7 @@ Mechatronics Project - Mechanical Servo-Powered Arm - Sam Wang
 
 Hello!
 
-My name is Sam, and this is the Github Repository for my Mechanical Arm project. I am an electrical and biomedical engineering student at McMaster University, and this project is meant for me to familiarize myself with various aspects of the engineering design process through a self-guided project.
+My name is Sam, and this is the Github Repository for my Mechanical Arm project. I am an electrical and biomedical engineering student at McMaster University, and this project is meant for me to familiarize myself with various aspects of the engineering design process through a self-guided project. I started this project in March 2026, and it will be a passion project for the upcoming summer and beyond!
 
 My goal is primarily to familiarize myself with embedded systems, as I aspire to become a capable embedded systems engineer. However, I will also be working with other aspects of the design process, since this is an individual project and I will be managing every aspect of this design with a strong emphasis on creating components from scratch wherever possible.
 
