@@ -2,7 +2,7 @@
 Mechatronics Project - Mechanical Servo-Powered Arm - Sam Wang
   
   
-### Overview:
+## Overview:
   
 Hello!
   
@@ -30,7 +30,7 @@ Hopefully, this project interests you! I would love to hear any advice or recomm
 <br>
 <br>
 
-### Description of Features
+## Description of Features
 
 Below is a list of features of this mechanical arm. Please note that items marked with a **(*)** are in progress or planned. Furthermore, features listed are non-exhaustive, and I will regularly update the list as new ideas are evaluated!
 
