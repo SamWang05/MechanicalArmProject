@@ -48,9 +48,15 @@ Below is a list of features of this mechanical arm. Please note that items marke
 * Interrupt-based battery-monitoring program to manage battery health. (*)
 
 
+## Contact Me
 
+I can be contacted primarily by email (wangsam00207@gmail.com)
 
-### Copyrght Notice
+<br>
+<br>
+<br>
+
+## Copyrght Notice
 
 Copyright 2026, 2026 Sam Wang
 
