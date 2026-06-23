@@ -47,6 +47,9 @@ Below is a list of features of this mechanical arm. Please note that items marke
 * Software PID controller for precise control of six servos using current and angle feedback. (*)
 * Interrupt-based battery-monitoring program to manage battery health. (*)
 
+<br>
+<br>
+<br>
 
 ## Contact Me
 
