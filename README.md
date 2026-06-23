@@ -1,6 +1,10 @@
 # MechanicalArmProject
 Mechatronics Project - Mechanical Servo-Powered Arm - Sam Wang
-  
+March 2026 - Present
+
+<br>
+<br>
+<br>  
   
 ## Overview:
   
