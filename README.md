@@ -45,7 +45,9 @@ Below is a list of features of this mechanical arm. Please note that items marke
 
 ##### Electrical
 * Electrical infrastructure powered by 3S LiPo battery (11.1V) with custom PCBs for power management, battery monitoring, display, etc.
+* Powered by Raspberry Pi Zero 2 W
 * Circuit protection components in event of overvoltage, overcurrent, electrostatic discharge (ESD), etc. (*)
+* Data transmission via Bluetooth (*)
 
 ##### Software
 * Software PID controller for precise control of six servos using current and angle feedback. (*)
