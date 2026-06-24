@@ -26,13 +26,7 @@ Hopefully, this project interests you! I would love to hear any advice or recomm
 <br>
 <br>
 <br>
-![MechanicalArmDemoPhoto](MechanicalArmDemoPhoto.png)
 
-*Above is a simple photo of an old iteration (since improved) of my mechanical arm, which was created in Autodesk Inventor.*  
-  
-<br>
-<br>
-<br>
 
 ## Description of Features
 
