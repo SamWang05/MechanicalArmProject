@@ -14,29 +14,71 @@ config = configparser.ConfigParser()
 # Assuming 6-Servo Arm:
 config['HIP'] = {
     'Name': 'Hip',
+    'IDNum': '1',
+
+    'ServoTargetPosition': 135,
+    'ServoMinPosition': 0,
+    'ServoMaxPosition': 270,
+
+    'ServoLockStatus': 0,
 }
 
 config['SHOULDER'] = {
     'Name': 'Shoulder',
+    'IDNum': '2',
+
+    'ServoTargetPosition': 67.5,
+    'ServoMinPosition': 0,
+    'ServoMaxPosition': 270,
+
+    'ServoLockStatus': 0,
 }
 
 config['UPPER ELBOW'] = {
     'Name': 'ElbowUpper',
+    'IDNum': '3',
+
+    'ServoTargetPosition': 135,
+    'ServoMinPosition': 0,
+    'ServoMaxPosition': 270,
+
+    'ServoLockStatus': 0,
 }
 
 config['LOWER ELBOW'] = {
     'Name': 'ElbowLower',
+    'IDNum': '4',
+
+    'ServoTargetPosition': 135,
+    'ServoMinPosition': 0,
+    'ServoMaxPosition': 270,
+
+    'ServoLockStatus': 0,
 }
 
 config['WRIST'] = {
     'Name': 'Wrist',
+    'IDNum': '5',
+
+    'ServoTargetPosition': 135,
+    'ServoMinPosition': 0,
+    'ServoMaxPosition': 270,
+
+    'ServoLockStatus': 0,
 }
 
 config['HAND'] = {
     'Name': 'Hand',
+    'IDNum': '6',
+
+    'ServoTargetPosition': 135,
+    'ServoMinPosition': 0,
+    'ServoMaxPosition': 270,
+
+    'ServoLockStatus': 0,
 }
 
 
 # Generate config file
-with open('inis/arnPosConfig.ini', 'w') as configfile:
+with open('inis/armConfig.ini', 'w') as configfile:
   config.write(configfile)
