@@ -35,10 +35,10 @@ class servoProperties:
     def getServoId(self):
         return self.__servoId
     
-    def getServoActualPosition(self):
+    def getServoActPos(self):
         return self.__servoTargetPosition
 
-    def getServoTargetPosition(self):
+    def getServoTarPos(self):
         return self.__servoActualPosition
 
     def getServoMinAngle(self):
@@ -58,12 +58,29 @@ class servoProperties:
     def printServoProperties(self):
         print("Name: " + self.getServoName())
         print("Id: " + str(self.getServoId()))
-        print("Actual Position: " + str(self.getServoActualPosition()) + " degrees")
-        print("Target Position: " + str(self.getServoTargetPosition()) + " degrees")
+        print("Actual Position: " + str(self.getServoActPos()) + " degrees")
+        print("Target Position: " + str(self.getServoTarPos()) + " degrees")
         print("Min Angle: " + str(self.getServoMinAngle()) + " degrees")
         print("Max Angle: " + str(self.getServoMaxAngle()) + " degrees")
         print("Voltage: " + str(self.getServoVoltage()) + " V")
         print("Temperature: " + str(self.getServoTemp()) + " oC")
 
-    def printTest(self):
-        print(self.getServoProperties())
+    # Change Servo Properties
+
+    def updateServoName(self, newName):
+        self.__servoName = newName
+
+    def updateServoId(self, newId):
+        self.__servoId = newId
+
+    def updateServoActPos(self, newActualPosition):
+        self.__servoActualPosition = newActualPosition
+
+    def updateServoTarPos(self, newTargetPosition):
+        self.__servoTargetPosition = newTargetPosition
+
+    def updateServoVoltage(self, newVoltage):
+        self.__servoVoltage = newVoltage
+
+    def updateServoTemp(self, newTemperature):
+        self.__servoTemp = newTemperature
