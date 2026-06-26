@@ -1,3 +1,2 @@
-from .positioning import initializeArmPosLib
-from .positioning import servoPositioningLib
+from .positioning import initializeArmPosLib, servoPosLib
 #from .serial import busSerialConnLib

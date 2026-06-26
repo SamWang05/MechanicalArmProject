@@ -7,12 +7,12 @@
 # You should have received a copy of the GNU General Public License along with this program. If not, see <https://www.gnu.org/licenses/>.
 
 import configparser
-import servoPositioningLib as sPos
+from . import servoPosLib as sPos
 
 # Initialize configs
 config = configparser.ConfigParser()
 
-config.read('configs/inis/armConfig.ini')
+print(config.read('./configs/inis/armConfig.ini'))
 
 # Initialize each servo
 def initializeHip():

@@ -6,15 +6,15 @@
 # This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 # You should have received a copy of the GNU General Public License along with this program. If not, see <https://www.gnu.org/licenses/>.
 
-from lib import initializeArmPosLib as init
-from lib import servoPositioningLib as sPos
+from lib import initializeArmPosLib as initAP
+#from lib import servoPosLib as sPos
 
-servoHip = init.initializeHip()
-servoShoulder = init.initializeShoulder()
-servoUpperElbow = init.initializeUpperElbow()
-servoLowerElbow = init.initializeLowerElbow()
-servoWrist = init.initializeWrist()
-servoHand = init.initializeHand()
+servoHip = initAP.initializeHip()
+servoShoulder = initAP.initializeShoulder()
+servoUpperElbow = initAP.initializeUpperElbow()
+servoLowerElbow = initAP.initializeLowerElbow()
+servoWrist = initAP.initializeWrist()
+servoHand = initAP.initializeHand()
 
 servoHip.printServoProperties()
 servoShoulder.printServoProperties()
