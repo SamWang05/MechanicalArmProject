@@ -11,7 +11,7 @@ import configparser
 config = configparser.ConfigParser()
 
 
-# Serial Setup
+# Serial setup
 
 config['SERIAL SETUP'] = {
     'Port': '/dev/ttyUSB0',
@@ -19,6 +19,8 @@ config['SERIAL SETUP'] = {
     'BaudRate': '9600'
 }
 
+
+# Generate config file
 
 with open('serialConfig.ini', 'w') as configfile:
   config.write(configfile)

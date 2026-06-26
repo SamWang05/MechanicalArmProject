@@ -11,14 +11,32 @@ import configparser
 config = configparser.ConfigParser()
 
 
-# Serial Setup
+# Assuming 6-Servo Arm:
+config['HIP'] = {
+    'Name' = 'Hip'
+}
 
-config['SERIAL SETUP'] = {
-    'Port': '/dev/ttyUSB0',
-    'TimeoutInSeconds': '10',
-    'BaudRate': '9600'
+config['SHOULDER'] = {
+    'Name' = 'Shoulder'
+}
+
+config['UPPER ELBOW'] = {
+    'Name' = 'ElbowUpper'
+}
+
+config['LOWER ELBOW'] = {
+    'Name' = 'ElbowLower'
+}
+
+config['WRIST'] = {
+    'Name' = 'Wrist'
+}
+
+config['HAND'] = {
+    'Name' = 'Hand'
 }
 
 
-with open('configs/serialConfig.ini', 'w') as configfile:
+# Generate config file
+with open('arnPosConfig.ini', 'w') as configfile:
   config.write(configfile)
