@@ -26,6 +26,10 @@ Hopefully, this project interests you! I would love to hear any advice or recomm
 <br>
 <br>
 
+Below is a photo of the most up-to-date assembly file of the mechanical arm robot. All components were created in Autodesk Inventor Professional.
+
+![Photo of Assembly of Mechanical Arm Robot in Autodesk Inventor Professional](MechanicalArmDemoPhoto.png)
+
 
 ## Description of Features
 
