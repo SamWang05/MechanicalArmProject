@@ -7,14 +7,13 @@
 # You should have received a copy of the GNU General Public License along with this program. If not, see <https://www.gnu.org/licenses/>.
 
 
-# Define new class for all servo properties. This is an ADT to store the
-# given servo's name, angle position, current draw, etc.
+# Defines all servo properties such as  servo's name, angle position, current draw, etc.
 class servoProperties:
 
     # Initialize
 
     def __init__(self, name: str, idNum: int, targetAnglePosition: int, actualAnglePosition: int, 
-    voltage: float, temp: float, minAngle: int, maxAngle: int):
+    minAngle: int, maxAngle: int, voltage: float, temp: float, lockStatus: int):
 
         self.__servoName = name
         self.__servoId = idNum
@@ -26,6 +25,8 @@ class servoProperties:
 
         self.__servoVoltage = voltage
         self.__servoTemp = temp
+        self.__servoLockStat = lockStatus
+
 
     # Get Functions
 
@@ -53,17 +54,8 @@ class servoProperties:
     def getServoTemp(self):
         return self.__servoTemp
     
-    # Print Servo Properties
-
-    def printServoProperties(self):
-        print("Name: " + self.getServoName())
-        print("Id: " + str(self.getServoId()))
-        print("Actual Position: " + str(self.getServoActPos()) + " degrees")
-        print("Target Position: " + str(self.getServoTarPos()) + " degrees")
-        print("Min Angle: " + str(self.getServoMinAngle()) + " degrees")
-        print("Max Angle: " + str(self.getServoMaxAngle()) + " degrees")
-        print("Voltage: " + str(self.getServoVoltage()) + " V")
-        print("Temperature: " + str(self.getServoTemp()) + " oC")
+    def getServoLockStat(self):
+        return self.__servoLockStat
 
     # Set Servo Properties
 
@@ -84,3 +76,32 @@ class servoProperties:
 
     def setServoTemp(self, newTemperature):
         self.__servoTemp = newTemperature
+
+    def setServoLockStat(self, newLockStat):
+        self.__servoLockStat = newLockStat
+
+
+    # Print Servo Properties
+
+    def printServoProperties(self):
+        print("----- Servo '" + self.getServoName() + "' Properties -----\n")
+        print("   Id: " + str(self.getServoId()))
+        print("   Actual Position: " + str(self.getServoActPos()) + " degrees")
+        print("   Target Position: " + str(self.getServoTarPos()) + " degrees")
+        print("   Min Angle: " + str(self.getServoMinAngle()) + " degrees")
+        print("   Max Angle: " + str(self.getServoMaxAngle()) + " degrees")
+        print("   Voltage: " + str(self.getServoVoltage()) + " V")
+        print("   Temperature: " + str(self.getServoTemp()) + " oC")
+        print("   Lock Status: " + str(self.getServoLockStat()) + " - [0 = Locked | 1 = Unlocked]")
+        print("\n")
+
+
+    # Complex Actions
+
+    def flipServoLock(self):
+        if self.getServoLockStat():
+            self.setServoLockStat(0)
+        else:
+            self.setServoLockStat(1)
+
+
