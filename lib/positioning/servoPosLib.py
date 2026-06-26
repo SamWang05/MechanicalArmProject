@@ -127,6 +127,7 @@ class armPosition:
         self.__handTarAngle = handObj.getServoTarPos()
         self.__armLenArray = [shoulderUpElbowLen, UpElbowLowElbowLen, LowElbowWristLen, WristHandLen]
 
+    # Get Functions
     def getTarPosArray(self):
         return [self.__hipTarAngle, self.__shoulderTarAngle, self.__upperElbowTarAngle, 
         self.__lowerElbowTarAngle, self.__wristTarAngle, self.__handTarAngle]
@@ -134,6 +135,6 @@ class armPosition:
     def getArmLenArray(self):
         return self.__armLenArray
 
-
-# under init func., add the various lengths of each component as is necessary
-# also, under generateDefaultArmConfig, add a header for [CONSTANTS]
+# Add get function for obtaining data from each joint:
+#   Input: servoObject
+#   Output: [jointTargetAngle, jointActualAngle]
