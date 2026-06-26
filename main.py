@@ -26,4 +26,4 @@ servoHand.printServoProperties()
 
 mechArm = sPos.armPosition(servoHip, servoShoulder, servoUpperElbow, servoLowerElbow, servoWrist, servoHand)
 
-print(mechArm.getTarPosArray)
+print(mechArm.getTarPosArray())

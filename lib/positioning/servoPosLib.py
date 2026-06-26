@@ -133,5 +133,3 @@ class armPosition:
 
 # under init func., add the various lengths of each component as is necessary
 # also, under generateDefaultArmConfig, add a header for [CONSTANTS]
-# find a way to call the angle measurement from different objects of servoProperties to populate arm position angles
-#   Solution: literally just pass object to armPosition lol
