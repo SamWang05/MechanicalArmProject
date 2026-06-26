@@ -99,9 +99,5 @@ class servoProperties:
     # Complex Actions
 
     def flipServoLock(self):
-        if self.getServoLockStat():
-            self.setServoLockStat(0)
-        else:
-            self.setServoLockStat(1)
-
+        self.setServoLockStat(self.getServoLockStat() ^ 0b1)
 
