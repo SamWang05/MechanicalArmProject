@@ -104,7 +104,7 @@ class servoProperties:
         print("   Max Angle: " + str(self.getServoMaxAngle()) + " degrees")
         print("   Voltage: " + str(self.getServoVoltage()) + " V")
         print("   Temperature: " + str(self.getServoTemp()) + " oC")
-        print("   Lock Status: " + str(self.getServoLockStat()) + " - [0 = Locked | 1 = Unlocked]")
+        print("   Lock Status: " + str(self.getServoLockStat()) + " - [False = Locked | True = Unlocked]")
         print("\n")
 
 

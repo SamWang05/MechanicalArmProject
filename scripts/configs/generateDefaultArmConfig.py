@@ -12,13 +12,15 @@ config = configparser.ConfigParser()
 
 
 # Assuming 6-Servo Arm:
+# Note that all servo min/max positions are pseudo-hardware-dependent and should not be changed
+
 config['HIP'] = {
     'Name': 'Hip',
     'IDNum': '1',
 
     'ServoTargetPosition': 135,
-    'ServoMinPosition': 0,
-    'ServoMaxPosition': 270,
+    'ServoMinPosition': 1,
+    'ServoMaxPosition': 269,
 
     'ServoLockStatus': 0,
 }
@@ -28,8 +30,8 @@ config['SHOULDER'] = {
     'IDNum': '2',
 
     'ServoTargetPosition': 67.5,
-    'ServoMinPosition': 0,
-    'ServoMaxPosition': 270,
+    'ServoMinPosition': 1,
+    'ServoMaxPosition': 269,
 
     'ServoLockStatus': 0,
 }
@@ -39,8 +41,8 @@ config['UPPER ELBOW'] = {
     'IDNum': '3',
 
     'ServoTargetPosition': 135,
-    'ServoMinPosition': 0,
-    'ServoMaxPosition': 270,
+    'ServoMinPosition': 1,
+    'ServoMaxPosition': 269,
 
     'ServoLockStatus': 0,
 }
@@ -50,8 +52,8 @@ config['LOWER ELBOW'] = {
     'IDNum': '4',
 
     'ServoTargetPosition': 135,
-    'ServoMinPosition': 0,
-    'ServoMaxPosition': 270,
+    'ServoMinPosition': 1,
+    'ServoMaxPosition': 269,
 
     'ServoLockStatus': 0,
 }
@@ -61,8 +63,8 @@ config['WRIST'] = {
     'IDNum': '5',
 
     'ServoTargetPosition': 135,
-    'ServoMinPosition': 0,
-    'ServoMaxPosition': 270,
+    'ServoMinPosition': 1,
+    'ServoMaxPosition': 269,
 
     'ServoLockStatus': 0,
 }
@@ -72,8 +74,8 @@ config['HAND'] = {
     'IDNum': '6',
 
     'ServoTargetPosition': 135,
-    'ServoMinPosition': 0,
-    'ServoMaxPosition': 270,
+    'ServoMinPosition': 1,
+    'ServoMaxPosition': 269,
 
     'ServoLockStatus': 0,
 }
