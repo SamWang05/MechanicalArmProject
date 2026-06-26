@@ -12,8 +12,8 @@ class servoProperties:
 
     # Initialize
 
-    def __init__(self, name: str, idNum: int, targetAnglePosition: int, actualAnglePosition: int, 
-    minAngle: int, maxAngle: int, voltage: float, temp: float, lockStatus: int):
+    def __init__(self, name: str, idNum: int, targetAnglePosition: float, actualAnglePosition: float, 
+    minAngle: float, maxAngle: float, voltage: float, temp: float, lockStatus: int):
 
         self.__servoName = name
         self.__servoId = idNum
@@ -60,25 +60,37 @@ class servoProperties:
     # Set Servo Properties
 
     def setServoName(self, newName):
-        self.__servoName = newName
+        if type(newName) == str:
+            self.__servoName = newName
 
     def setServoId(self, newId):
-        self.__servoId = newId
+        if type(newId) == int:
+            self.__servoId = newId
 
-    def setServoActPos(self, newActualPosition):
-        self.__servoActualPosition = newActualPosition
+    def setServoActPos(self, newActualPosition):     # Note: No filter can be placed for actual position, it should always reflect the exact angle given by the servo
+        if type(newActualPosition) == float:
+            self.__servoActualPosition = newActualPosition
 
     def setServoTarPos(self, newTargetPosition):
-        self.__servoTargetPosition = newTargetPosition
+        if type(newTargetPosition) == float:
+            if newTargetPosition < self.getServoMinAngle():
+                self.__servoTargetPosition = self.getServoMinAngle()
+            elif newTargetPosition > self.getServoMaxAngle():
+                self.__servoTargetPosition = self.getServoMaxAngle()
+            else:
+                self.__servoTargetPosition = newTargetPosition
 
     def setServoVoltage(self, newVoltage):
-        self.__servoVoltage = newVoltage
+        if type(newVoltage) == float:
+            self.__servoVoltage = newVoltage
 
     def setServoTemp(self, newTemperature):
-        self.__servoTemp = newTemperature
+        if type(newTemperature) == float:
+            self.__servoTemp = newTemperature
 
     def setServoLockStat(self, newLockStat):
-        self.__servoLockStat = newLockStat
+        if newLockStat == 0 or newLockStat == 1:
+            self.__servoLockStat = newLockStat
 
 
     # Print Servo Properties
