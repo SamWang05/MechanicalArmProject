@@ -22,5 +22,5 @@ config['SERIAL SETUP'] = {
 
 # Generate config file
 
-with open('serialConfig.ini', 'w') as configfile:
+with open('inis/serialConfig.ini', 'w') as configfile:
   config.write(configfile)

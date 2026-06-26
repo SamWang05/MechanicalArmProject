@@ -13,30 +13,30 @@ config = configparser.ConfigParser()
 
 # Assuming 6-Servo Arm:
 config['HIP'] = {
-    'Name' = 'Hip'
+    'Name': 'Hip',
 }
 
 config['SHOULDER'] = {
-    'Name' = 'Shoulder'
+    'Name': 'Shoulder',
 }
 
 config['UPPER ELBOW'] = {
-    'Name' = 'ElbowUpper'
+    'Name': 'ElbowUpper',
 }
 
 config['LOWER ELBOW'] = {
-    'Name' = 'ElbowLower'
+    'Name': 'ElbowLower',
 }
 
 config['WRIST'] = {
-    'Name' = 'Wrist'
+    'Name': 'Wrist',
 }
 
 config['HAND'] = {
-    'Name' = 'Hand'
+    'Name': 'Hand',
 }
 
 
 # Generate config file
-with open('arnPosConfig.ini', 'w') as configfile:
+with open('inis/arnPosConfig.ini', 'w') as configfile:
   config.write(configfile)
