@@ -15,6 +15,7 @@ config = configparser.ConfigParser()
 
 config.read('scripts/configs/inis/armConfig.ini')
 
+# testing something
 
 def initializeHip():
     hipServo = sPos.servoProperties(
