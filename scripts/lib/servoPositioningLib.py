@@ -112,4 +112,3 @@ class servoProperties:
 
     def flipServoLock(self):
         self.setServoLockStat(self.getServoLockStat() ^ 0b1)
-
