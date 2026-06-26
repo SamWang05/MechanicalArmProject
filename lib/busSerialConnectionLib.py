@@ -1,4 +1,4 @@
-# Bus Servo Controller Library for Servo Motors
+# Library of functions relating to serial connection between Rasp. Pi and Bus Servo Driver Board
 
 import time
 import serial
