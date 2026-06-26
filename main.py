@@ -27,3 +27,4 @@ mechArm = initAP.initializeArm(servoHip, servoShoulder,
 servoUpperElbow, servoLowerElbow, servoWrist, servoHand)
 
 print(mechArm.getTarPosArray())
+print(mechArm.getArmLenArray())

@@ -117,7 +117,7 @@ class armPosition:
     # Initialize
     def __init__(self, hipObj = object, shoulderObj = object, 
     upperElbowObj = object, lowerElbowObj = object, wristObj = object, 
-    handObj = object):
+    handObj = object, shoulderUpElbowLen = float, UpElbowLowElbowLen = float, LowElbowWristLen = float, WristHandLen = float):
 
         self.__hipTarAngle = hipObj.getServoTarPos()
         self.__shoulderTarAngle = shoulderObj.getServoTarPos()
@@ -125,10 +125,14 @@ class armPosition:
         self.__lowerElbowTarAngle = lowerElbowObj.getServoTarPos()
         self.__wristTarAngle = wristObj.getServoTarPos()
         self.__handTarAngle = handObj.getServoTarPos()
+        self.__armLenArray = [shoulderUpElbowLen, UpElbowLowElbowLen, LowElbowWristLen, WristHandLen]
 
     def getTarPosArray(self):
         return [self.__hipTarAngle, self.__shoulderTarAngle, self.__upperElbowTarAngle, 
         self.__lowerElbowTarAngle, self.__wristTarAngle, self.__handTarAngle]
+
+    def getArmLenArray(self):
+        return self.__armLenArray
 
 
 # under init func., add the various lengths of each component as is necessary

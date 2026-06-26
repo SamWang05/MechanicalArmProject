@@ -14,6 +14,13 @@ config = configparser.ConfigParser()
 # Assuming 6-Servo Arm:
 # Note that all servo min/max positions are pseudo-hardware-dependent and should not be changed
 
+config['CONSTANTS'] = {
+    'ShoulderToUpperElbowLen': 161.6,
+    'UElbowToLElbowLen': 139.1,
+    'LElbowToWristLen': 146.0,
+    'WristToHandLen': 86.45,
+}
+
 config['HIP'] = {
     'Name': 'Hip',
     'IDNum': '1',

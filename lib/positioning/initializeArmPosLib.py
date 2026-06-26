@@ -135,6 +135,11 @@ def initializeArm(servoHip, servoShoulder, servoUpperElbow, servoLowerElbow, ser
         servoUpperElbow, 
         servoLowerElbow, 
         servoWrist, 
-        servoHand
+        servoHand,
+        
+        float(config['CONSTANTS']['ShoulderToUpperElbowLen']),
+        float(config['CONSTANTS']['UElbowToLElbowLen']),
+        float(config['CONSTANTS']['LElbowToWristLen']),
+        float(config['CONSTANTS']['WristToHandLen'])
     )
     return mechArm
