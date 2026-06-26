@@ -11,7 +11,6 @@
 class servoProperties:
 
     # Initialize
-
     def __init__(self, name: str, idNum: int, targetAnglePosition: float, actualAnglePosition: float, 
     minAngle: float, maxAngle: float, voltage: float, temp: float, lockStatus: bool):
 
@@ -28,8 +27,8 @@ class servoProperties:
         self.__servoLockStat = lockStatus
 
 
-    # Get Functions
-
+    # Get Functions - Outside of initialization, these should NOT 
+    # be used on their own. Use the functions under armPosition instead!!!
     def getServoName(self):
         return self.__servoName
 
@@ -57,8 +56,8 @@ class servoProperties:
     def getServoLockStat(self):
         return self.__servoLockStat
 
-    # Set Servo Properties
-
+    # Set Functions - Outside of initialization, these should NOT 
+    # be used on their own. Use the functions under armPosition instead!!!
     def setServoName(self, newName):
         if type(newName) == str:
             self.__servoName = newName
@@ -94,7 +93,6 @@ class servoProperties:
 
 
     # Print Servo Properties
-
     def printServoProperties(self):
         print("----- Servo '" + self.getServoName() + "' Properties -----\n")
         print("   Id: " + str(self.getServoId()))
@@ -109,6 +107,31 @@ class servoProperties:
 
 
     # Complex Actions
-
     def flipServoLock(self):
         self.setServoLockStat(self.getServoLockStat() ^ 0b1)
+
+
+# Describes position of the arm at a given moment as a series of polar coordinates (radius, angle)
+class armPosition:
+
+    # Initialize
+    def __init__(self, hipObj = object, shoulderObj = object, 
+    upperElbowObj = object, lowerElbowObj = object, wristObj = object, 
+    handObj = object):
+
+        self.__hipTarAngle = hipObj.getServoTarPos()
+        self.__shoulderTarAngle = shoulderObj.getServoTarPos()
+        self.__upperElbowTarAngle = upperElbowObj.getServoTarPos()
+        self.__lowerElbowTarAngle = lowerElbowObj.getServoTarPos()
+        self.__wristTarAngle = wristObj.getServoTarPos()
+        self.__handTarAngle = handObj.getServoTarPos()
+
+    def getTarPosArray(self):
+        return [self.__hipTarAngle, self.__shoulderTarAngle, self.__upperElbowTarAngle, 
+        self.__lowerElbowTarAngle, self.__wristTarAngle, self.__handTarAngle]
+
+
+# under init func., add the various lengths of each component as is necessary
+# also, under generateDefaultArmConfig, add a header for [CONSTANTS]
+# find a way to call the angle measurement from different objects of servoProperties to populate arm position angles
+#   Solution: literally just pass object to armPosition lol
