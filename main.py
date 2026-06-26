@@ -7,7 +7,7 @@
 # You should have received a copy of the GNU General Public License along with this program. If not, see <https://www.gnu.org/licenses/>.
 
 from lib import initializeArmPosLib as initAP
-#from lib import servoPosLib as sPos
+from lib import servoPosLib as sPos
 
 servoHip = initAP.initializeHip()
 servoShoulder = initAP.initializeShoulder()
@@ -24,6 +24,6 @@ servoWrist.printServoProperties()
 servoHand.printServoProperties()
 
 
-mechArm = armPosition(servoHip, servoShoulder, servoUpperElbow, servoLowerElbow, servoWrist, servoHand)
+mechArm = sPos.armPosition(servoHip, servoShoulder, servoUpperElbow, servoLowerElbow, servoWrist, servoHand)
 
 print(mechArm.getTarPosArray)

@@ -15,7 +15,7 @@ config = configparser.ConfigParser()
 
 target_dir = pathlib.Path(__file__).resolve().parent / 'configs' / 'inis' / 'armConfig.ini'
 
-print(config.read(target_dir))
+config.read(target_dir)
 
 # Initialize each servo
 def initializeHip():
