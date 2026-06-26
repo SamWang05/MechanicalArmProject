@@ -23,7 +23,7 @@ servoLowerElbow.printServoProperties()
 servoWrist.printServoProperties()
 servoHand.printServoProperties()
 
-
-mechArm = sPos.armPosition(servoHip, servoShoulder, servoUpperElbow, servoLowerElbow, servoWrist, servoHand)
+mechArm = initAP.initializeArm(servoHip, servoShoulder, 
+servoUpperElbow, servoLowerElbow, servoWrist, servoHand)
 
 print(mechArm.getTarPosArray())

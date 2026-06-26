@@ -125,3 +125,16 @@ def initializeHand():
         config['HAND'].getboolean('ServoLockStatus'),
     )
     return handServo
+
+# Initialize arm
+
+def initializeArm(servoHip, servoShoulder, servoUpperElbow, servoLowerElbow, servoWrist, servoHand):
+    mechArm = sPos.armPosition(
+        servoHip, 
+        servoShoulder, 
+        servoUpperElbow, 
+        servoLowerElbow, 
+        servoWrist, 
+        servoHand
+    )
+    return mechArm
