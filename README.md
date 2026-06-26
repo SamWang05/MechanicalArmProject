@@ -36,7 +36,7 @@ Below is a photo of the most up-to-date assembly file of the mechanical arm robo
 Below is a list of features of this mechanical arm. Please note that items marked with a **(*)** are in progress or planned. Furthermore, features listed are non-exhaustive, and I will regularly update the list as new ideas are evaluated!
 
 ##### Mechanical
-* Six joints providing 360° mobility across three planes.
+* Six joints providing mobility across three planes.
 * Modular attachment system to allow for manually changing end-attachment of the robotic arm.
 * Dedicated housing for electrical infrastructure. (*)
 
