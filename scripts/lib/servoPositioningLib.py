@@ -13,7 +13,7 @@ class servoProperties:
     # Initialize
 
     def __init__(self, name: str, idNum: int, targetAnglePosition: float, actualAnglePosition: float, 
-    minAngle: float, maxAngle: float, voltage: float, temp: float, lockStatus: int):
+    minAngle: float, maxAngle: float, voltage: float, temp: float, lockStatus: bool):
 
         self.__servoName = name
         self.__servoId = idNum
@@ -89,7 +89,7 @@ class servoProperties:
             self.__servoTemp = newTemperature
 
     def setServoLockStat(self, newLockStat):
-        if newLockStat == 0 or newLockStat == 1:
+        if newLockStat == bool:
             self.__servoLockStat = newLockStat
 
 
