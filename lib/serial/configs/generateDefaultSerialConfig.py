@@ -14,7 +14,7 @@ config = configparser.ConfigParser()
 # Serial setup
 
 config['SERIAL SETUP'] = {
-    'Port': '/dev/ttyUSB0',
+    'Port': '/dev/serial0',
     'TimeoutInSeconds': '10',
     'BaudRate': '9600'
 }

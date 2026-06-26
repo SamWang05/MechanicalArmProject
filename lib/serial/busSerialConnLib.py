@@ -8,9 +8,17 @@
 
 import serial
 
-serialPort = serial.Serial('/dev/ttyUSB0', 9600, timeout = 10)
 
-print(serialPort.name)
-print("Successfully printed serial port name")
+def newSerialPort(portName, baudRate, timeoutInSeconds = 1):
+    serialPort = serial.Serial(port = portName, baudrate = baudRate, timeout = timeoutInSeconds)
 
-serialPort.close()
+    print("Successfully opened serial port")
+
+    return serialPort
+
+def printSerialPortName(port = object):
+    print(port.name)
+
+def closeSerialPort(port = object):
+    port.close()
+    print("Successfully closed serial port")
