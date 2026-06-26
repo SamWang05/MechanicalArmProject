@@ -8,8 +8,6 @@
 
 import serial
 
-# Currently testing to see if serial connection can be established
-
 serialPort = serial.Serial('/dev/ttyUSB0', 9600, timeout = 10)
 
 print(serialPort.name)

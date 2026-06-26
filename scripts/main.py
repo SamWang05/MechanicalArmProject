@@ -1,5 +1,10 @@
+import configparser
 from lib import servoPositioningLib as sPos
 from lib import armPositioningLib as aPos
+
+# Initialize Configs
+
+config = configparser.ConfigParser()
 
 s1 = sPos.servoProperties("servo one", 1, 0.0, 0.0, 0.0, 270.0, 11.1, 24.9, 0)
 s1.printServoProperties()
