@@ -7,12 +7,15 @@
 # You should have received a copy of the GNU General Public License along with this program. If not, see <https://www.gnu.org/licenses/>.
 
 import configparser
+import pathlib
 from . import servoPosLib as sPos
 
 # Initialize configs
 config = configparser.ConfigParser()
 
-print(config.read('./configs/inis/armConfig.ini'))
+target_dir = pathlib.Path(__file__).resolve().parent / 'configs' / 'inis' / 'armConfig.ini'
+
+print(config.read(target_dir))
 
 # Initialize each servo
 def initializeHip():
