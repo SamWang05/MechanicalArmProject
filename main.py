@@ -1,4 +1,4 @@
-from scripts.lib import initialize as init
+from scripts.lib import initializeArmPos as init
 
 servoHip = init.initializeHip()
 servoShoulder = init.initializeShoulder()
