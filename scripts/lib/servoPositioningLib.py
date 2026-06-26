@@ -65,22 +65,22 @@ class servoProperties:
         print("Voltage: " + str(self.getServoVoltage()) + " V")
         print("Temperature: " + str(self.getServoTemp()) + " oC")
 
-    # Change Servo Properties
+    # Set Servo Properties
 
-    def updateServoName(self, newName):
+    def setServoName(self, newName):
         self.__servoName = newName
 
-    def updateServoId(self, newId):
+    def setServoId(self, newId):
         self.__servoId = newId
 
-    def updateServoActPos(self, newActualPosition):
+    def setServoActPos(self, newActualPosition):
         self.__servoActualPosition = newActualPosition
 
-    def updateServoTarPos(self, newTargetPosition):
+    def setServoTarPos(self, newTargetPosition):
         self.__servoTargetPosition = newTargetPosition
 
-    def updateServoVoltage(self, newVoltage):
+    def setServoVoltage(self, newVoltage):
         self.__servoVoltage = newVoltage
 
-    def updateServoTemp(self, newTemperature):
+    def setServoTemp(self, newTemperature):
         self.__servoTemp = newTemperature
